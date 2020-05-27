@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mainTable.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="backgr">
+        <div class="tableWR">
+            <table id="readingList">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year of publication</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Ham on Rye</td>
+                    <td>C.&nbsp;Bukowski</td>
+                    <td>1982</td>
+                    <td>Finished</td>
+                    <td><button><img src="remove.jpg" alt="Remove"></button></td>
+                </tr>
+                <tr>
+                    <td>Crime and Punishment</td>
+                    <td>F.&nbsp;Dostoevsky</td>
+                    <td>1866</td>
+                    <td>Finished</td>
+                    <td><button><img src="remove.jpg" alt="Remove"></button></td>
+                </tr>
+                <tr>
+                    <td>The Lover's Dictionary</td>
+                    <td>D.&nbsp;Levithan</td>
+                    <td>2011</td>
+                    <td>Not finished</td>
+                    <td><button><img src="remove.jpg" alt="Remove"></button></td>
+                </tr>
+                <tr>
+                    <td>Octavius</td>
+                    <td>Mark Minucius Felix</td>
+                    <td>180</td>
+                    <td>Finished</td>
+                    <td><button><img src="remove.jpg" alt="Remove"></button></td>
+                </tr>
+            </table>
+        </div>
+    
+        <form id="addTableRow">
+            <label for="titleInput">Title</label>
+            <input id="titleInput" type="text">
+            <label for="authorInput">Author</label>
+            <input id="authorInput" type="text">
+            <label for="yearInput">Year of publication</label>
+            <input id="yearInput" type="text">
+            <label for="statusInput">Finished
+                <input id="statusInput" type="checkbox">
+            </label>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+</html>
